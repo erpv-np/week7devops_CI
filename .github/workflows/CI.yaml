@@ -4,6 +4,12 @@ on: [push]
 jobs:
   behave-testing:
     runs-on: ubuntu-latest  #setup OS of choice
+
+    permissions:
+      issues: write
+      checks: write
+      pull-requests: write  
+      
     steps:
       - name: Checkout
         uses: actions/checkout@v4

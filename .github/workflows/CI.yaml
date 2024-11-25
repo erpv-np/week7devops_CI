@@ -22,6 +22,7 @@ jobs:
         run: |
           behave features/ --junit --junit-directory=test-results
       - name: upload test results
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: test-results

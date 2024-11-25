@@ -1,8 +1,8 @@
-name: learn-github-actions
+name: CI Process
 run-name: ${{ github.actor }} is learning GitHub Actions
 on: [push]
 jobs:
-  check-bats-version:
+  behave-testing:
     runs-on: ubuntu-latest  #setup OS of choice
     steps:
       - name: Checkout

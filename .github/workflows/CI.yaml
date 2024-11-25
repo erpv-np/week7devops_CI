@@ -6,8 +6,8 @@ jobs:
     runs-on: ubuntu-latest  #setup OS of choice
     steps:
       - name: Checkout
-      - uses: actions/checkout@v4
+        uses: actions/checkout@v4
       - name: List repo
-      - run: |
+        run: |
           ls
 

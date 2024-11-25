@@ -19,13 +19,13 @@ def divide(a, b):
        
 ## program entry point        
 while True:
-    operation = input("Operation (+, -, *, /): ")
-    number_1 = int(input('Please enter the first number: '))
-    number_2 = int(input('Please enter the second number: '))
+    #operation = input("Operation (+, -, *, /): ")
+    #number_1 = int(input('Please enter the first number: '))
+    #number_2 = int(input('Please enter the second number: '))
 
-#    operation = '+'
-#    number_1  = 10
-#    number_2  = 10
+    operation = '+'
+    number_1  = 10
+    number_2  = 10
 
     if operation == '+':
         print('{} + {} = '.format(number_1, number_2))
@@ -47,8 +47,8 @@ while True:
         print('You have not typed a valid operator, please run the program again.')
 
     # Take input from user
-    calc_again = input("Do you want to calculate again (Any key for YES or (N or n) for NO)? ")
-    #calc_again = 'N'
+    #calc_again = input("Do you want to calculate again (Any key for YES or (N or n) for NO)? ")
+    calc_again = 'N'
 
     # If user types N, say good-bye to the user and end the program
     if calc_again == 'N' or calc_again == 'n':

@@ -105,12 +105,22 @@ jobs:
             core.setFailed(`Test Failures Detected:\n${results}`);
 
     # Step 7: CD (Prepare files for deployment)-individual name
+    ##epv  - name: Prepare files
+    ##epv    run: |
+    ##epv      mkdir -p release
+    ##epv      cp -r ./calculator_pre_release.py ./release/calculator-epv.py
+    ##epv      echo "Deployment files prepared."
+    ##epv      ls -l ./release/
+          
+    # Step 7: CD (Prepare files for deployment)-individual name
       - name: Prepare files
         run: |
           mkdir -p release
-          cp -r ./calculator_pre_release.py ./release/calculator-epv.py
+          cp -r ./calculator.py ./release/calculator-epv.py
           echo "Deployment files prepared."
           ls -l ./release/
+
+
       
       # Step 8: Upload files to AWS S3
       - name: Upload to AWS S3
